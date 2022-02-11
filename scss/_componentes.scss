@@ -1,0 +1,33 @@
+.btnPrimary{
+    min-width: 300px;
+    min-height: 60px;
+    background-color: $primary;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive; 
+    font-size: 32px;
+    color: $white;
+    border-width: 3px;
+    border-color: $white2;
+}
+.btnSecondary{
+    display: block;
+    min-width: 200px;
+    max-width: 300px;
+    min-height: 60px;
+    background-color: $secondary;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive; 
+    font-size: 18px;
+    color: $white;
+    border-width: 3px;
+    border-color: $white2;
+}
+.btnSizeSelector {
+    height: 45px;
+    width: 45px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: $white;
+    border-color: $terciary;
+    font-family: 'Staatliches', cursive;
+    font-size: 16px;

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a24f710803.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilos/styleGrid.css"> 
+
+    <title>KvM Store | Contacto</title>
+</head>
+<body class="bodyContacto">
+    <header> <!-- Menu -->
+        <nav class="mobileMenu">
+            <a href="../index.html"><img src="../img/Logo.png" alt="Logo de tienda" id="logo"></a>
+            <section class="burger">
+                <label for="toggle" id="burgerM">Burger Menu<i class="fas fa-hamburger"></i></label>
+                <input type="checkbox" id="toggle">
+                <section class="menu">
+                    <a href="../secciones/camisetas.html">Camisetas</a>
+                    <a href="../secciones/nosotros.html">Nosotros</a>
+                    <a href="../secciones/contacto.html">Contacto</a>
+                    <a href="../secciones/carrito.html">Carrito</a>
+                </section>
+
+            </section>
+        </nav>
+
+        <nav class="desktopMenu">
+            <a href="../index.html"><img src="../img/Logo.png" alt="Logo de tienda" id="logo"></a>
+            <section class="menu">
+                <ul class="subNav"><a href="../secciones/camisetas.html">Camisetas</a> 
+                    </ul>
+                <ul><a href="../secciones/nosotros.html">Nosotros</a></ul>
+                <ul><a href="../secciones/contacto.html">Contacto</a></ul>
+                <ul><a href="../secciones/carrito.html">Carrito</a></ul>
+            </section>
+        </nav>
+    </header>
+
+    <main class="mainContacto">
+        <section class="heroContacto">
+            <section id="title1">
+                <h1>Senpai noticed us!</h1>
+            </section>
+            <img id="startForm" src="../img/contacto/startForm.png" alt="">
+        </section>
+
+        <form action="" method="get">
+        <fieldset>
+            <section class="shortInput">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" placeholder="Shinji"> <br>
+            </section>
+            <section class="shortInput">
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" placeholder="Ikari"> <br>
+            </section>
+
+            <section class="longInput">
+                <label for="domicilio">Domicilio: </label>
+                <input type="text" name="domicilio" placeholder="Tokio 3"> <br>
+            </section>
+            
+            <section class="longInput">
+                <label for="correo">Email: </label>
+                <input type="email" name="correo" placeholder="shinji@nerv.com"> <br>
+            </section>
+           
+            <section class="messageType">
+                <h3>En que consiste el mensaje?</h3>
+                <select id="necesidad" name="tema">
+                    <option value="orden">Problemas con mi orden</option>
+                    <option value="recibido">Problemas con mi producto recibido</option>
+                    <option value="factura">Solicitud de factura</option>
+                    <option value="general">Contacto en general</option>
+                  </select>      
+            </section>
+
+            <section class="comments">
+                <label for="comentarios">Comentarios: </label><br>
+              <textarea name="comentarios" id="" cols="50" rows="15"></textarea>
+              <button type="submit" value="Enviar" class="btnPrimary">
+                  Enviar Mensaje
+              </button>
+            </section>
+        </fieldset>
+
+        <section class="afterForm">
+            <p>La mayoría de los mensajes son respondidos en un lapso de 2 a 3 días hábiles.</p>
+            <img src="../img/contacto/endForm.png" alt="">
+        </section>
+    </main>
+
+    <footer>
+        <p>Pie de pagina - &copy;2021 - desarrollado por: Jack Zorola</p>
+        
+        <h2>Siguenos en redes sociales</h2>
+        <section class="socials">
+            <a href="https://www.instagram.com/kayvsthemoon/">Instagram <i class="fab fa-instagram"></i></a>
+            <a href="mailto:kayvsthemoon@gmail.com">Correo <i class="far fa-envelope"></i></a>
+            <a href="https://www.facebook.com/kayvsthemoon">Facebook<i class="fab fa-facebook-square"></i></a>
+            <a href="https://open.spotify.com/artist/1lPbVyRwZyaT3O1JeDRyTY">Spotify<i class="fab fa-spotify"></i></a>
+        </section>
+
+        <section class="newsletter">
+            <form>
+                <label for="mail">Suscribete a nuestro newsletter</label>
+                <input type="email" id="mail" name="mail">
+                <input type="submit" value="Enviar"">
+            </form>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+@media (max-width: 480px){ 
+    header{
+        grid-area: menu;                  /*GRID INDEX*/
+        z-index: 7; /*Esto es lo unico que hace que el banner no se suba*/
+    }
+    
+    #logo{
+        margin-left: 10px;
+    }
+            /*RESPONSIVE MENU*/
+    .mobileMenu{   
+        background-color: $primary;
+        display: grid;    /*ON OFF MENU*/
+        grid-template-columns: 5% 95%;
+        }
+    .burger{
+        text-align: right;
+        height: 70px;
+        line-height: 70px;
+    }
+    .menu{
+        margin: 0 30px 0 0;
+        display: none;    /*Display for blocking and unblocking menu*/
+        width: 100%;
+        text-align: center;
+        z-index: 7;
+        a{
+            text-decoration: none;
+            color: $white2;
+            margin: 0px 10px;
+            line-height: 70px;
+            display: block;
+            background-color: $black;
+            border-bottom: 3px solid $white2;
+            font-family: 'Oswald', sans-serif; 
+            font-size: 28px;
+            box-shadow: 0px 10px 10px $black;
+            &:last-child{
+                border-radius: 0px 0px 10px 10px;
+            }
+            &:hover {
+                background-color: $black2;   
+            }
+        }
+    }
+
+    #toggle {
+        display: none;
+        &:checked + .menu {
+            display: block;
+        }
+    } 
+    #burgerM{
+        color: #E0FBFC;
+        &:hover {
+            color: #$black;
+        }
+        i{
+            margin-left: 5px;
+        }
+    }
+    label {
+        cursor: pointer;
+        margin: 0 20px;
+    }
+        /*DESKTOP MENU*/
+    .desktopMenu{
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+     /* ########## HEADER ########## */
+     header{
+        grid-area: menu;                  /*GRID INDEX*/
+        z-index: 7; /*Esto es lo unico que hace que el banner no se suba*/
+    }
+
+    #logo{
+        margin-left: 10px;
+    }
+        /*RESPONSIVE MENU*/
+    .mobileMenu{   
+        background-color: $primary;
+        display: grid;    /*ON OFF MENU*/
+        grid-template-columns: 5% 95%;
+    }
+    .burger{
+        text-align: right;
+        height: 70px;
+        line-height: 70px;
+    }
+    .menu{
+        margin: 0 30px 0 0;
+        display: none;    /*Display for blocking and unblocking menu*/
+        width: 100%;
+        text-align: center;
+        z-index: 7;
+        a{
+            text-decoration: none;
+            color: $white2;
+            margin: 0px 10px;
+            line-height: 70px;
+            display: block;
+            background-color: $black;
+            border-bottom: 3px solid $white2;
+            font-family: 'Oswald', sans-serif; 
+            font-size: 28px;
+            box-shadow: 0px 10px 10px $black;
+            &:last-child{
+                border-radius: 0px 0px 10px 10px;
+            }
+            &:hover {
+                background-color: $black2;   
+            }
+        }
+    }
+
+    #toggle {
+        display: none;
+        &:checked + .menu {
+            display: block;
+        }
+    } 
+    #burgerM{
+        color: #E0FBFC;
+        &:hover {
+            color: $black;
+        }
+        i{
+            margin-left: 5px;
+        }
+    }
+    label {
+        cursor: pointer;
+        margin: 0 20px;
+    }
+    .desktopMenu{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px {
+    header{
+        grid-area: menu;                  /*GRID INDEX*/
+        z-index: 7; /*Esto es lo unico que hace que el banner no se suba*/
+    }
+    nav {
+        background-color: $primary;
+        display: grid;
+        grid-template-columns: 5% 95%;
+    }
+    .mobileMenu{
+        display: none;
+    }
+
+    #logo{
+        margin-left: 10px;
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px 10px;
+        justify-content: end;
+    }
+    ul {
+        padding: 10px;
+        font-family: 'Staatliches', cursive;    
+        color: #e0fbfc;
+        border-radius: 8px;
+        width: auto;
+        margin: auto 5px auto 5px;
+        &:hover{
+            background-color: #e03d15;
+        } 
+    } 
+    i {
+        padding-left: 5px;
+    } 
+    a {
+        color: #e0fbfc;
+    }
+}
+
+

@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;     /* Removes link-like view */
+} 
+
+@media (max-width: 480px){ 
+    .homepage{                                                      /* BODY OF HOMEPAGE */
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+            "menu    menu   menu"
+            ".       hero       ."
+            ".  productSection  ."
+            "footer footer footer"
+        ;
+        grid-template-columns: auto 95% auto;
+        grid-template-rows: auto auto auto; 
+    }
+    .bodyCarrito{                                                      /* BODY OF CARRITO */
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "cHandler cHandler cHandler"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .bodyCamisetas{
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "cShirts cShirts cShirts"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
+    .usPage{
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "usSection usSection usSection"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .bodyContacto{
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "mainForm mainForm mainForm"
+        "footer footer footer"
+        ;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .homepage{                                                      /* BODY OF HOMEPAGE */
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+            "menu    menu   menu"
+            ".       hero       ."
+            ".  productSection  ."
+            "footer footer footer"
+        ;
+        grid-template-columns: auto 95% auto;
+        grid-template-rows: auto auto auto; 
+    }
+    .bodyCarrito{                                                      /* BODY OF CARRITO */
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "cHandler cHandler cHandler"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .bodyCamisetas{
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "cShirts cShirts cShirts"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
+    .usPage{
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "usSection usSection usSection"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .bodyContacto{
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "mainForm mainForm mainForm"
+        "footer footer footer"
+        ;
+    }
+}
+
+@media (min-width: 1024px) {
+    .homepage{                                                      /* BODY OF HOMEPAGE */
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+            "menu    menu   menu"
+            ".       hero       ."
+            ".  productSection  ."
+            "footer footer footer"
+        ;
+        grid-template-columns: auto 95% auto;
+        grid-template-rows: auto auto auto; 
+    }
+    .bodyCarrito{                                                      /* BODY OF CARRITO */
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "cHandler cHandler cHandler"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .bodyCamisetas{
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "cShirts cShirts cShirts"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .usPage{
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "usSection usSection usSection"
+        "footer footer footer"
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .bodyContacto{
+        background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+        background-repeat: repeat;
+        background-position: left;
+        background-attachment: fixed;
+        display: grid;
+        grid-template-areas: 
+        "menu menu menu"
+        "mainForm mainForm mainForm"
+        "footer footer footer"
+        ;
+    }
+
+}
+
