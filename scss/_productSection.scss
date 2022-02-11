@@ -1,0 +1,158 @@
+@media (max-width: 480px) {
+    .productSection{
+        grid-area: productSection;                  /*GRID INDEX*/
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        align-items: start;
+    } 
+    .shirtRow h2{
+        display: block;
+        font-size: 32px;
+        font-family: 'Staatliches', cursive;
+        padding-left: 20px;
+    }
+    .productRow{
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+    .product{
+        display: inline-block;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        margin: 0px 5px 20px 5px;
+        img{
+            width: 150px;
+            border-radius: 8px;
+            display: block;
+            &:hover{
+                filter: blur(4px);
+               }
+            }
+        i{
+            display: inline;
+            color: #293241;
+            &:hover{
+                color: #56698A;
+            }
+        }  
+    }   
+    .productName{
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .productSection{
+        grid-area: productSection;                  /*GRID INDEX*/
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        align-items: start;
+    } 
+    .shirtRow h2{
+        display: block;
+        font-size: 32px;
+        font-family: 'Staatliches', cursive;
+        padding-left: 20px;
+    }
+    .productRow{
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+    .product{
+        display: inline-block;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        margin: 0px 5px 20px 5px;
+        img{
+            width: 150px;
+            border-radius: 8px;
+            display: block;
+            &:hover{
+                filter: blur(4px);
+            }
+            i{
+                display: inline;
+                color: #293241;
+                &:hover{
+                    color: #56698A;
+                }
+            }
+        }  
+    }   
+
+    .productName{
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }  
+}
+
+
+@media (min-width: 1024px) {
+    .productSection{
+        grid-area: productSection;                  /*GRID INDEX*/
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        align-items: start;
+    } 
+    .shirtRow h2{
+        display: block;
+        font-size: 32px;
+        font-family: 'Staatliches', cursive;
+        padding-left: 20px;
+    }
+    .productRow{
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+    .product{
+        display: inline-block;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        margin: 0px 5px 20px 5px;
+        img{
+            width: 150px;
+            border-radius: 8px;
+            display: block;
+            &:hover{
+                filter: blur(4px);
+            }
+        }  
+        i{
+            display: inline;
+            color: #293241;
+            &:hover{
+                color: #56698A;
+            }
+        } 
+    }   
+
+    .productName{
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+

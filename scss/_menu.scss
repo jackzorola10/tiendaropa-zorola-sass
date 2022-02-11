@@ -53,7 +53,7 @@
     #burgerM{
         color: #E0FBFC;
         &:hover {
-            color: #$black;
+            color: $black;
         }
         i{
             margin-left: 5px;
@@ -140,7 +140,7 @@
     }
 }
 
-@media (min-width: 1024px {
+@media (min-width: 1024px) {
     header{
         grid-area: menu;                  /*GRID INDEX*/
         z-index: 7; /*Esto es lo unico que hace que el banner no se suba*/

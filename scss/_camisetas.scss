@@ -1,0 +1,397 @@
+@media (max-width: 480px) {
+    .bodyCamisetas main{
+        grid-area: cShirts;
+    }
+    .heroCamisetas{
+        text-align: center;
+        h1 {
+            font-family: 'Anton', sans-serif; 
+            font-size: 42px;
+            margin: 30px 0px 30px 0px;
+        }
+    }
+    .imageCarrousel{
+        display: inline-grid;
+        grid-template-areas: 
+        "destacado"
+        "simple"
+        ;
+        grid-template-rows: 2fr 1fr;
+        width: 100%;
+    }
+    #imageCarrouselDestacado{
+        grid-area: destacado;
+        max-width: 600px;
+        width: 100%;
+        border-radius: 10px;
+        align-self: center;
+        &:hover{
+            filter: blur(4px);
+        }
+    }
+
+    .tinyCarrousel{
+        grid-area: simple;        
+        margin: 5px auto 0px auto;
+        img{
+            max-width: 150px;
+            width: 24%;
+            border-radius: 10px;
+            align-self: start;
+            &:hover{
+                filter: blur(4px);
+            }
+        }
+    }
+
+    .shirtRow {
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: center;
+        button{
+            margin-bottom: 40px;
+        }
+    }
+
+    .discountsTitles{
+        display: block;
+        h2{
+            display: block;
+            font-size: 56px;
+            font-family: 'Staatliches', cursive;
+            width: 60%;
+            text-align:center;
+            margin-left: auto;
+            margin-right: auto;
+        }  
+        p{
+            font-family: 'Oswald', sans-serif; 
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    }
+    .discountCatalogue{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 0px 20px 0px 20px;
+        img{
+            border-radius: 10px;
+            width: 30%;
+        }
+    }
+    .discountProduct{
+        display: flex;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .discountProductInfo{
+        display: inline-block;
+        padding: 20px;
+        h3{
+            font-family: 'Staatliches', cursive;
+            display: inline-block;
+            font-size: 32px;
+        }
+        i{
+            font-size: 24px;
+            display: inline-block;  
+            &:hover{
+                color: $black3;
+            }
+        }
+    }
+    .prices{
+        display: block;
+    }
+    .originalPrice{
+        font-family: 'Staatliches', cursive;
+        text-decoration: line-through;
+        font-size: 24px;
+        display: inline-block;
+    }
+    .discountPrice{
+        font-family: 'Staatliches', cursive;
+        color: #EE6C4D;
+        font-size: 44px;
+        display: inline-block;
+    }
+    .sizes {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .bodyCamisetas main{
+        grid-area: cShirts;
+    }
+    .heroCamisetas{
+        text-align: center;
+        h1 {
+            font-family: 'Anton', sans-serif; 
+            font-size: 42px;
+            margin: 30px 0px 30px 0px;
+        }
+    }
+    .imageCarrousel{
+        display: inline-grid;
+        grid-template-areas: 
+        "destacado"
+        "simple"
+        ;
+        grid-template-rows: 2fr 1fr;
+        width: 100%;
+    }
+    #imageCarrouselDestacado{
+        grid-area: destacado;
+        max-width: 600px;
+        width: 100%;
+        border-radius: 10px;
+        align-self: center;
+        &:hover{
+            filter: blur(4px);
+        }
+    }
+    .tinyCarrousel{
+        grid-area: simple;        
+        margin: 5px auto 0px auto;
+        img{
+            max-width: 150px;
+            width: 24%;
+            border-radius: 10px;
+            align-self: start;
+            &:hover{
+                filter: blur(4px);
+            }
+        }
+    }
+    .shirtRow {
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: center;
+        button{
+            margin-bottom: 40px;
+        }
+    }
+    .discountsTitles{
+        display: block;
+        h2{
+            display: block;
+            font-size: 56px;
+            font-family: 'Staatliches', cursive;
+            width: 60%;
+            text-align:center;
+            margin-left: auto;
+            margin-right: auto;
+        }  
+        p{
+            font-family: 'Oswald', sans-serif; 
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    }
+    .discountCatalogue{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 0px 20px 0px 20px;
+        img{
+            border-radius: 10px;
+            width: 30%;
+        }
+    }
+
+    .discountProduct{
+        display: flex;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .discountProductInfo{
+        display: inline-block;
+        padding: 20px;
+        h3{
+            font-family: 'Staatliches', cursive;
+            display: inline-block;
+            font-size: 32px;
+        }
+        i{
+            font-size: 24px;
+            display: inline-block;  
+            &:hover{
+                color: $black3;
+            }
+        }
+    }
+    .prices{
+        display: block;
+    }
+    .originalPrice{
+        font-family: 'Staatliches', cursive;
+        text-decoration: line-through;
+        font-size: 24px;
+        display: inline-block;
+    }
+    .discountPrice{
+        font-family: 'Staatliches', cursive;
+        color: #EE6C4D;
+        font-size: 44px;
+        display: inline-block;
+    }
+    .sizes {
+        display: flex;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .bodyCamisetas main{
+        grid-area: cShirts;
+    }
+    .heroCamisetas{
+        text-align: center;
+        h1 {
+            font-family: 'Anton', sans-serif; 
+            font-size: 42px;
+        }
+    }
+    .imageCarrousel{
+        display: grid;
+        grid-template-areas: 
+        "destacado simple"
+        "destacado simple"
+        "destacado simple"
+        "destacado simple"        
+        ;
+        grid-template-columns: 4fr 1fr;
+        justify-content: center;
+        
+        /* grid-column-gap: 20px; */
+        margin-bottom: 60px;
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #imageCarrouselDestacado{
+        grid-area: destacado;
+        max-width: 600px;
+        border-radius: 10px;
+        align-self: center;
+        &:hover{
+            filter: blur(4px);
+        }
+    }
+    .tinyCarrousel{
+        grid-area: simple;        
+        img{
+            width: 150px;
+            justify-self: start;
+            border-radius: 10px;
+            align-self: start;
+            &:hover{
+                filter: blur(4px);
+            }
+        }
+    }
+
+    .shirtRow {
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: center;
+        button{
+            margin-bottom: 40px;
+        }
+    }
+    .discountsTitles{
+        display: block;
+        h2{
+            display: block;
+            font-size: 56px;
+            font-family: 'Staatliches', cursive;
+            width: 60%;
+            text-align:center;
+            margin-left: auto;
+            margin-right: auto;
+        }  
+        p{
+            font-family: 'Oswald', sans-serif; 
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    }
+    .discountCatalogue{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        img{
+            border-radius: 10px;
+            width: 30%;
+        }
+    }
+    .discountProduct{
+        display: flex;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .discountProductInfo{
+        display: inline-block;
+        padding: 20px;
+        h3{
+            font-family: 'Staatliches', cursive;
+            display: inline-block;
+            font-size: 32px;
+        }
+        i{
+            font-size: 24px;
+            display: inline-block;  
+            &:hover{
+                color: $black3;
+            }
+        }
+    }
+    .prices{
+        display: block;
+    }
+    .originalPrice{
+        font-family: 'Staatliches', cursive;
+        text-decoration: line-through;
+        font-size: 24px;
+        display: inline-block;
+    }
+    .discountPrice{
+        font-family: 'Staatliches', cursive;
+        color: $primary;
+        font-size: 44px;
+        display: inline-block;
+    }
+    .sizes {
+        display: flex;
+    }
+}

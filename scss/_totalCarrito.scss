@@ -1,0 +1,71 @@
+@media (max-width: 480px) {
+    .total {
+        grid-area: total;
+        background-color: $white;
+        padding: 20px;
+        box-shadow: 5px 5px 5px $black;
+        border-radius: 10px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        h3{
+            color: $black;
+            font-family: 'Oswald', sans-serif; 
+            font-size: 32px;
+        }
+    }
+
+    .totalAmount{
+        color: $black;
+        font-family: 'Oswald', sans-serif; 
+        font-size: 72px;
+
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+    .total {
+        grid-area: total;
+        background-color: $white;
+        padding: 20px;
+        box-shadow: 5px 5px 5px $black;
+        border-radius: 10px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        h3{
+            color: $black;
+            font-family: 'Oswald', sans-serif; 
+            font-size: 32px;
+        }
+    }
+    .totalAmount{
+        color: $black;
+        font-family: 'Oswald', sans-serif; 
+        font-size: 72px;
+
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .total {
+        grid-area: total;
+        background-color: $white;
+        padding: 20px;
+        box-shadow: 5px 5px 5px $black;
+        border-radius: 10px;
+        max-width: 400px;
+        h3{
+            color: $black;
+            font-family: 'Oswald', sans-serif; 
+            font-size: 32px;
+        }
+    }
+    .totalAmount{
+        color: $black;
+        font-family: 'Oswald', sans-serif; 
+        font-size: 72px;
+    }
+}
