@@ -1,7 +1,7 @@
 {
   "name": "tiendaropa-zorola-sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este es le proyecto de coderhouse para Jack Zorola, en donde presento un ecommerce de venta de camisetas. El nombre del sitio es Kay Vs the Moon Store, o KvM Store abreviado.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

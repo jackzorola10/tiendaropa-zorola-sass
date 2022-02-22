@@ -140,37 +140,39 @@
 
 .btnPrimary {
   background-color: #EE6C4D;
-  font-family: none;
   font-size: 32px;
   color: #E0FBFC;
   border-radius: 10px;
   border-width: 3px;
   border-color: #90F1F4;
   min-width: 300px;
-  min-height: 60px; }
+  min-height: 60px;
+  font-family: 'Staatliches', cursive; }
 
 .btnSecondary {
+  background-color: #3D5A80;
+  font-size: 18px;
+  color: #E0FBFC;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: #90F1F4;
   display: block;
   min-width: 200px;
   max-width: 300px;
   min-height: 60px;
-  background-color: #3D5A80;
-  border-radius: 10px;
-  font-family: 'Staatliches', cursive;
-  font-size: 18px;
-  color: #E0FBFC;
-  border-width: 3px;
-  border-color: #90F1F4; }
+  font-family: 'Staatliches', cursive; }
 
 .btnSizeSelector {
+  background-color: #E0FBFC;
+  font-size: 16px;
+  color: #293241;
+  border-radius: 5px;
+  border-width: 3px;
+  border-color: none;
   height: 45px;
   width: 45px;
   margin: 5px;
-  border-radius: 5px;
-  background-color: #E0FBFC;
-  border-color: #98C1D9;
-  font-family: 'Staatliches', cursive;
-  font-size: 16px; }
+  font-family: 'Staatliches', cursive; }
 
 @media (max-width: 480px) {
   footer {
