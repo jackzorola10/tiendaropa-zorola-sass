@@ -25,7 +25,7 @@ HTML, CSS, SASS, SEO.
 
 #### SASS
 - Se utilizó Sass para estructurar el proyecto y aprovechar las ventajas de esta tecnología. 
-- Se utilizaron operadores de lenguaje de Sass en los colores, para establecer la paleta de colores y variaciones. [_colores.scss] (https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/scss/_colores.scss)
+- Se utilizaron operadores de lenguaje de Sass en los colores, para establecer la paleta de colores y variaciones. [_colores.scss](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/scss/_colores.scss)
 - Se usarón nestings para agrupar el codigo de manera mas legible a lo largo de todo el proyecto. 
 - Se puede encontrar ademas el [package.json](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/package.json) con la documentación necesaria.
 
@@ -35,17 +35,17 @@ HTML, CSS, SASS, SEO.
 - Cada pagina contiene meta descripciones y keywords enfocados al contenido de la pagina.
 - El contenido de imagenes ha sido optimizado, reduciendo la resolución a un minimo optimo. Se utilizó: 
     - [Optimizilla](https://imagecompressor.com) 
-    - [TinyPng] (https://tinypng.com)
-    - [Photopea] (https://www.photopea.com)
-- Se llevaron a cabo varios analisis en lighthouse donde se busco reparar los comentarios que hacia el reporte, esta es la calificación final que se logró obtener [Lighthouse] ().
+    - [TinyPng](https://tinypng.com)
+    - [Photopea](https://www.photopea.com)
+- Se llevaron a cabo varios analisis en lighthouse donde se busco reparar los comentarios que hacia el reporte, esta es la calificación final que se logró obtener [Lighthouse]().
 - Se extrajo ademas un sitemap añadido en la ruta del proyecto [sitemap.xml](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/sitemap.xml).
 
 
 ### Paginas del proyecto
-- [Homepage] (https://jackzorola10.github.io/tiendaropa-zorola-sass/)
-    - [Camisetas] (https://jackzorola10.github.io/tiendaropa-zorola-sass/secciones/camisetas.html)
-    - [Nosotros] (https://jackzorola10.github.io/tiendaropa-zorola-sass/secciones/nosotros.html)
-    - [Contacto] (https://jackzorola10.github.io/tiendaropa-zorola-sass/secciones/contacto.html)
-    - [Carrito] (https://jackzorola10.github.io/tiendaropa-zorola-sass/secciones/contacto.html)
+- [Homepage](https://jackzorola10.github.io/tiendaropa-zorola-sass/)
+    - [Camisetas](https://jackzorola10.github.io/tiendaropa-zorola-sass/secciones/camisetas.html)
+    - [Nosotros](https://jackzorola10.github.io/tiendaropa-zorola-sass/secciones/nosotros.html)
+    - [Contacto](https://jackzorola10.github.io/tiendaropa-zorola-sass/secciones/contacto.html)
+    - [Carrito](https://jackzorola10.github.io/tiendaropa-zorola-sass/secciones/contacto.html)
 
 
