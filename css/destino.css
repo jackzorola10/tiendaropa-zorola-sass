@@ -492,109 +492,75 @@
   a {
     color: #e0fbfc; } }
 
+.hero1 {
+  grid-area: hero;
+  /*GRID INDEX*/
+  padding: 30px; }
+
+.bannerImg {
+  grid-area: banner;
+  width: 100%;
+  border-radius: 10px;
+  background-image: url(../assets/background-100.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: nextBanner 30s ease-in-out -10s infinite normal; }
+
 .titles {
   display: block;
   grid-area: titles;
   padding: 30px;
   align-content: center; }
   .titles h1 {
-    font-family: 'Anton', sans-serif;
+    font-family: "Anton", sans-serif;
     font-size: 42px; }
   .titles h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 24px;
     margin: 20px 0px 20px 0px; }
 
+@keyframes nextBanner {
+  0% {
+    background-image: url(../assets/banners/banner1.jpg); }
+  20% {
+    background-image: url(../assets/banners/banner2.jpg); }
+  40% {
+    background-image: url(../assets/banners/banner3.jpg); }
+  60% {
+    background-image: url(../assets/banners/banner4.jpg); }
+  80% {
+    background-image: url(../assets/banners/banner1.jpg); } }
+
+/*  ###################################
+    ###### MEDIA QUERY SENSITIVE ######
+    ################################### */
 @media (max-width: 480px) {
   .hero1 {
-    grid-area: hero;
-    /*GRID INDEX*/
     display: subgrid;
     grid-template-areas: "banner" "titles";
-    grid-template-columns: 100%;
-    padding: 30px; }
+    grid-template-columns: 100%; }
   .bannerImg {
     /*#### BANNER TRANSITION SMARTPHONE####*/
-    grid-area: banner;
-    width: 100%;
-    height: 30vh;
-    border-radius: 10px;
-    background-image: url(../assets/background-100.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: nextBanner 30s ease-in-out -10s infinite normal; }
-  @keyframes nextBanner {
-    0% {
-      background-image: url(../assets/banners/banner1.jpg); }
-    20% {
-      background-image: url(../assets/banners/banner2.jpg); }
-    40% {
-      background-image: url(../assets/banners/banner3.jpg); }
-    60% {
-      background-image: url(../assets/banners/banner4.jpg); }
-    80% {
-      background-image: url(../assets/banners/banner1.jpg); } } }
+    height: 30vh; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   .hero1 {
-    grid-area: hero;
-    /*GRID INDEX*/
     display: subgrid;
     grid-template-areas: "banner" "titles";
-    grid-template-columns: 100%;
-    padding: 30px; }
+    grid-template-columns: 100%; }
   .bannerImg {
     /*#### BANNER TRANSITION TABLET####*/
-    grid-area: banner;
-    width: 100%;
-    height: 25vh;
-    border-radius: 10px;
-    background-image: url(../assets/background-100.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: nextBanner 30s ease-in-out -10s infinite normal; }
-  @keyframes nextBanner {
-    0% {
-      background-image: url(../assets/banners/banner1.jpg); }
-    20% {
-      background-image: url(../assets/banners/banner2.jpg); }
-    40% {
-      background-image: url(../assets/banners/banner3.jpg); }
-    60% {
-      background-image: url(../assets/banners/banner4.jpg); }
-    80% {
-      background-image: url(../assets/banners/banner1.jpg); } } }
+    height: 25vh; } }
 
 @media (min-width: 1024px) {
   .hero1 {
-    grid-area: hero;
-    /*GRID INDEX*/
     display: grid;
     grid-template-areas: "banner titles";
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
-    padding: 30px; }
+    grid-column-gap: 40px; }
   .bannerImg {
     /*#### BANNER TRANSITION DESKTOP####*/
-    grid-area: banner;
-    width: 100%;
-    height: 45vh;
-    border-radius: 10px;
-    background-image: url(../assets/background-100.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: nextBanner 30s ease-in-out -10s infinite normal; }
-  @keyframes nextBanner {
-    0% {
-      background-image: url(../assets/banners/banner1.jpg); }
-    20% {
-      background-image: url(../assets/banners/banner2.jpg); }
-    40% {
-      background-image: url(../assets/banners/banner3.jpg); }
-    60% {
-      background-image: url(../assets/banners/banner4.jpg); }
-    80% {
-      background-image: url(../assets/banners/banner1.jpg); } } }
+    height: 45vh; } }
 
 @media (max-width: 480px) {
   .productSection {
@@ -952,28 +918,111 @@
     font-family: 'Oswald', sans-serif;
     font-size: 72px; } }
 
+.bodyCamisetas main {
+  grid-area: cShirts; }
+
+.heroCamisetas {
+  text-align: center; }
+  .heroCamisetas h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 42px; }
+
+#imageCarrouselDestacado {
+  grid-area: destacado;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  align-self: center; }
+  #imageCarrouselDestacado:hover {
+    filter: blur(4px); }
+
+.shirtRow {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  align-items: center; }
+  .shirtRow button {
+    margin-bottom: 40px; }
+
+.discountsTitles {
+  display: block; }
+  .discountsTitles h2 {
+    display: block;
+    font-size: 56px;
+    font-family: "Staatliches", cursive;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .discountsTitles p {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 60px; }
+
+.discountCatalogue {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0px 20px 0px 20px; }
+  .discountCatalogue img {
+    border-radius: 10px;
+    width: 30%; }
+
+.discountProduct {
+  display: flex;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center; }
+
+.discountProductInfo {
+  display: inline-block;
+  padding: 20px; }
+  .discountProductInfo h3 {
+    font-family: "Staatliches", cursive;
+    display: inline-block;
+    font-size: 32px; }
+  .discountProductInfo i {
+    font-size: 24px;
+    display: inline-block; }
+    .discountProductInfo i:hover {
+      color: #56698A; }
+
+.prices {
+  display: block; }
+
+.originalPrice {
+  font-family: "Staatliches", cursive;
+  text-decoration: line-through;
+  font-size: 24px;
+  display: inline-block; }
+
+.discountPrice {
+  font-family: "Staatliches", cursive;
+  color: #EE6C4D;
+  font-size: 44px;
+  display: inline-block; }
+
+.sizes {
+  display: flex; }
+
+/*  ###################################
+    ###### MEDIA QUERY SENSITIVE ######
+    ################################### */
 @media (max-width: 480px) {
-  .bodyCamisetas main {
-    grid-area: cShirts; }
-  .heroCamisetas {
-    text-align: center; }
-    .heroCamisetas h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 42px;
-      margin: 30px 0px 30px 0px; }
+  .heroCamisetas h1 {
+    margin: 30px 0px 30px 0px; }
   .imageCarrousel {
     display: inline-grid;
     grid-template-areas: "destacado" "simple";
     grid-template-rows: 2fr 1fr;
     width: 100%; }
-  #imageCarrouselDestacado {
-    grid-area: destacado;
-    max-width: 600px;
-    width: 100%;
-    border-radius: 10px;
-    align-self: center; }
-    #imageCarrouselDestacado:hover {
-      filter: blur(4px); }
   .tinyCarrousel {
     grid-area: simple;
     margin: 5px auto 0px auto; }
@@ -983,97 +1032,16 @@
       border-radius: 10px;
       align-self: start; }
       .tinyCarrousel img:hover {
-        filter: blur(4px); }
-  .shirtRow {
-    display: flex;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-    align-items: center; }
-    .shirtRow button {
-      margin-bottom: 40px; }
-  .discountsTitles {
-    display: block; }
-    .discountsTitles h2 {
-      display: block;
-      font-size: 56px;
-      font-family: 'Staatliches', cursive;
-      width: 60%;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-    .discountsTitles p {
-      font-family: 'Oswald', sans-serif;
-      font-size: 24px;
-      text-align: center;
-      margin-bottom: 60px; }
-  .discountCatalogue {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    padding: 0px 20px 0px 20px; }
-    .discountCatalogue img {
-      border-radius: 10px;
-      width: 30%; }
-  .discountProduct {
-    display: flex;
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center; }
-  .discountProductInfo {
-    display: inline-block;
-    padding: 20px; }
-    .discountProductInfo h3 {
-      font-family: 'Staatliches', cursive;
-      display: inline-block;
-      font-size: 32px; }
-    .discountProductInfo i {
-      font-size: 24px;
-      display: inline-block; }
-      .discountProductInfo i:hover {
-        color: #56698A; }
-  .prices {
-    display: block; }
-  .originalPrice {
-    font-family: 'Staatliches', cursive;
-    text-decoration: line-through;
-    font-size: 24px;
-    display: inline-block; }
-  .discountPrice {
-    font-family: 'Staatliches', cursive;
-    color: #EE6C4D;
-    font-size: 44px;
-    display: inline-block; }
-  .sizes {
-    display: flex; } }
+        filter: blur(4px); } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
-  .bodyCamisetas main {
-    grid-area: cShirts; }
-  .heroCamisetas {
-    text-align: center; }
-    .heroCamisetas h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 42px;
-      margin: 30px 0px 30px 0px; }
+  .heroCamisetas h1 {
+    margin: 30px 0px 30px 0px; }
   .imageCarrousel {
     display: inline-grid;
     grid-template-areas: "destacado" "simple";
     grid-template-rows: 2fr 1fr;
     width: 100%; }
-  #imageCarrouselDestacado {
-    grid-area: destacado;
-    max-width: 600px;
-    width: 100%;
-    border-radius: 10px;
-    align-self: center; }
-    #imageCarrouselDestacado:hover {
-      filter: blur(4px); }
   .tinyCarrousel {
     grid-area: simple;
     margin: 5px auto 0px auto; }
@@ -1083,83 +1051,9 @@
       border-radius: 10px;
       align-self: start; }
       .tinyCarrousel img:hover {
-        filter: blur(4px); }
-  .shirtRow {
-    display: flex;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-    align-items: center; }
-    .shirtRow button {
-      margin-bottom: 40px; }
-  .discountsTitles {
-    display: block; }
-    .discountsTitles h2 {
-      display: block;
-      font-size: 56px;
-      font-family: 'Staatliches', cursive;
-      width: 60%;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-    .discountsTitles p {
-      font-family: 'Oswald', sans-serif;
-      font-size: 24px;
-      text-align: center;
-      margin-bottom: 60px; }
-  .discountCatalogue {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    padding: 0px 20px 0px 20px; }
-    .discountCatalogue img {
-      border-radius: 10px;
-      width: 30%; }
-  .discountProduct {
-    display: flex;
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center; }
-  .discountProductInfo {
-    display: inline-block;
-    padding: 20px; }
-    .discountProductInfo h3 {
-      font-family: 'Staatliches', cursive;
-      display: inline-block;
-      font-size: 32px; }
-    .discountProductInfo i {
-      font-size: 24px;
-      display: inline-block; }
-      .discountProductInfo i:hover {
-        color: #56698A; }
-  .prices {
-    display: block; }
-  .originalPrice {
-    font-family: 'Staatliches', cursive;
-    text-decoration: line-through;
-    font-size: 24px;
-    display: inline-block; }
-  .discountPrice {
-    font-family: 'Staatliches', cursive;
-    color: #EE6C4D;
-    font-size: 44px;
-    display: inline-block; }
-  .sizes {
-    display: flex; } }
+        filter: blur(4px); } }
 
 @media (min-width: 1024px) {
-  .bodyCamisetas main {
-    grid-area: cShirts; }
-  .heroCamisetas {
-    text-align: center; }
-    .heroCamisetas h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 42px; }
   .imageCarrousel {
     display: grid;
     grid-template-areas: "destacado simple" "destacado simple" "destacado simple" "destacado simple";
@@ -1170,13 +1064,6 @@
     width: 45%;
     margin-left: auto;
     margin-right: auto; }
-  #imageCarrouselDestacado {
-    grid-area: destacado;
-    max-width: 600px;
-    border-radius: 10px;
-    align-self: center; }
-    #imageCarrouselDestacado:hover {
-      filter: blur(4px); }
   .tinyCarrousel {
     grid-area: simple; }
     .tinyCarrousel img {
@@ -1185,72 +1072,7 @@
       border-radius: 10px;
       align-self: start; }
       .tinyCarrousel img:hover {
-        filter: blur(4px); }
-  .shirtRow {
-    display: flex;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: column;
-    align-items: center; }
-    .shirtRow button {
-      margin-bottom: 40px; }
-  .discountsTitles {
-    display: block; }
-    .discountsTitles h2 {
-      display: block;
-      font-size: 56px;
-      font-family: 'Staatliches', cursive;
-      width: 60%;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto; }
-    .discountsTitles p {
-      font-family: 'Oswald', sans-serif;
-      font-size: 24px;
-      text-align: center;
-      margin-bottom: 60px; }
-  .discountCatalogue {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto; }
-    .discountCatalogue img {
-      border-radius: 10px;
-      width: 30%; }
-  .discountProduct {
-    display: flex;
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center; }
-  .discountProductInfo {
-    display: inline-block;
-    padding: 20px; }
-    .discountProductInfo h3 {
-      font-family: 'Staatliches', cursive;
-      display: inline-block;
-      font-size: 32px; }
-    .discountProductInfo i {
-      font-size: 24px;
-      display: inline-block; }
-      .discountProductInfo i:hover {
-        color: #56698A; }
-  .prices {
-    display: block; }
-  .originalPrice {
-    font-family: 'Staatliches', cursive;
-    text-decoration: line-through;
-    font-size: 24px;
-    display: inline-block; }
-  .discountPrice {
-    font-family: 'Staatliches', cursive;
-    color: #EE6C4D;
-    font-size: 44px;
-    display: inline-block; }
-  .sizes {
-    display: flex; } }
+        filter: blur(4px); } }
 
 @media (max-width: 480px) {
   .usSection {

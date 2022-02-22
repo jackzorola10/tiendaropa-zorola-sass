@@ -1,109 +1,81 @@
+.hero1{
+    grid-area: hero;                  /*GRID INDEX*/
+    padding: 30px;
+}
+.bannerImg {
+    grid-area: banner;
+    width: 100%;    
+    border-radius: 10px;
+    background-image: url(../assets/background-100.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: nextBanner 30s ease-in-out -10s infinite normal;
+}
 .titles {
     display: block;
     grid-area: titles;
     padding: 30px;
     align-content: center;
     h1{
-        font-family: 'Anton', sans-serif; 
+        font-family: $mainFont;
         font-size: 42px;
     }
     h2{
-        font-family: 'Oswald', sans-serif; 
+        font-family: $secondFont; 
         font-size: 24px;
         margin: 20px 0px 20px 0px;
     }
 }
+@keyframes nextBanner {
+    0% {background-image: url(../assets/banners/banner1.jpg);}
+    20% {background-image: url(../assets/banners/banner2.jpg);}
+    40% {background-image: url(../assets/banners/banner3.jpg);}
+    60% {background-image: url(../assets/banners/banner4.jpg);}
+    80% {background-image: url(../assets/banners/banner1.jpg);}
+}
+
+
+/*  ###################################
+    ###### MEDIA QUERY SENSITIVE ######
+    ################################### */
 
 @media (max-width: 480px) {
     .hero1 {
-        grid-area: hero;                  /*GRID INDEX*/
         display: subgrid;;
         grid-template-areas: 
             "banner"
             "titles"
         ;
         grid-template-columns: 100%;
-        padding: 30px;
     } 
     .bannerImg {  /*#### BANNER TRANSITION SMARTPHONE####*/
-        grid-area: banner;
-        width: 100%;    
         height: 30vh;
-        border-radius: 10px;
-        background-image: url(../assets/background-100.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        animation: nextBanner 30s ease-in-out -10s infinite normal;
     }
-    @keyframes nextBanner {
-        0% {background-image: url(../assets/banners/banner1.jpg);}
-        20% {background-image: url(../assets/banners/banner2.jpg);}
-        40% {background-image: url(../assets/banners/banner3.jpg);}
-        60% {background-image: url(../assets/banners/banner4.jpg);}
-        80% {background-image: url(../assets/banners/banner1.jpg);}
-    }
-
 }
-
 @media (min-width: 481px) and (max-width: 1023px) {
     .hero1 {
-        grid-area: hero;                  /*GRID INDEX*/
         display: subgrid;
         grid-template-areas: 
             "banner"
             "titles"
         ;
         grid-template-columns: 100%;
-        padding: 30px;
     }
-    
     .bannerImg {  /*#### BANNER TRANSITION TABLET####*/
-        grid-area: banner;
-        width: 100%;    
         height: 25vh;
-        border-radius: 10px;
-        background-image: url(../assets/background-100.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        animation: nextBanner 30s ease-in-out -10s infinite normal;
-    }
-    @keyframes nextBanner {
-        0% {background-image: url(../assets/banners/banner1.jpg);}
-        20% {background-image: url(../assets/banners/banner2.jpg);}
-        40% {background-image: url(../assets/banners/banner3.jpg);}
-        60% {background-image: url(../assets/banners/banner4.jpg);}
-        80% {background-image: url(../assets/banners/banner1.jpg);}
     }
 }
-
 @media (min-width: 1024px) {
     .hero1 {
-        grid-area: hero;                  /*GRID INDEX*/
         display: grid;
         grid-template-areas: 
             "banner titles"
         ;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 40px;
-        padding: 30px;
     } 
     .bannerImg {  /*#### BANNER TRANSITION DESKTOP####*/
-        grid-area: banner;
-        width: 100%;    
         height: 45vh;
-        border-radius: 10px;
-        background-image: url(../assets/background-100.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        animation: nextBanner 30s ease-in-out -10s infinite normal;
     }
-    @keyframes nextBanner {
-        0% {background-image: url(../assets/banners/banner1.jpg);}
-        20% {background-image: url(../assets/banners/banner2.jpg);}
-        40% {background-image: url(../assets/banners/banner3.jpg);}
-        60% {background-image: url(../assets/banners/banner4.jpg);}
-        80% {background-image: url(../assets/banners/banner1.jpg);}
-    }
-
 }
 

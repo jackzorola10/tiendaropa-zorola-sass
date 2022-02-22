@@ -2,6 +2,9 @@
 
 Este es el proyecto de ecommerce para el curso de frontend de Desarrollo Web de Coderhouse. 
 
+## Overview
+*La pagina pretende simular un ecommerce de una tienda enfocada en la venta de camisetas de series japonesas populares, así como algunas licencias de videojuegos, mostrando diferentes categorias, precios, descuentos, carrito, formas de contacto, etc.* 
+
 ## Tecnologias Utilizadas
 HTML, CSS, SASS, SEO.
 
