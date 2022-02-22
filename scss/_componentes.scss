@@ -1,13 +1,18 @@
+@mixin button ($backcol, $ff, $fs, $col, $bradius, $bwidth, $bcolor) {
+    background-color: $backcol;
+    font-family: $ff;
+    font-size: $fs;
+    color: $col;
+    border-radius: $bradius;
+    border-width: $bwidth;
+    border-color: $bcolor;
+
+}
+
 .btnPrimary{
+    @include button ($primary, none, 32px, $white, 10px, 3px, $white2);
     min-width: 300px;
     min-height: 60px;
-    background-color: $primary;
-    border-radius: 10px;
-    font-family: 'Staatliches', cursive; 
-    font-size: 32px;
-    color: $white;
-    border-width: 3px;
-    border-color: $white2;
 }
 .btnSecondary{
     display: block;
