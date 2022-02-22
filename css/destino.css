@@ -1147,369 +1147,168 @@
       margin-left: auto;
       margin-right: auto; } }
 
+.mainContacto {
+  grid-area: mainForm;
+  display: grid;
+  grid-template-areas: "heroContacto" "fieldset" "afterForm"; }
+
+.heroContacto {
+  grid-area: heroContacto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center; }
+  .heroContacto h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    float: right; }
+  .heroContacto img {
+    display: inline-block;
+    max-height: 200px;
+    text-align: right; }
+
+.afterForm {
+  grid-area: afterForm; }
+
+fieldset {
+  display: subgrid;
+  grid-template-areas: "lInput" "lInput" "mType" "comments";
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 100%;
+  grid-row-gap: 20px;
+  border-width: 0; }
+
+label {
+  font-family: "Staatliches", cursive;
+  color: #3D5A80; }
+
+.shortInput {
+  display: inline-block;
+  grid-area: sInput;
+  width: 49%;
+  margin-bottom: 20px; }
+  .shortInput input {
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #90F1F4;
+    color: #293241;
+    text-align: left;
+    border-color: #98C1D9; }
+
+.longInput {
+  grid-area: lInput;
+  width: 98%;
+  margin-bottom: 50px; }
+  .longInput input {
+    width: 100%;
+    float: left;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #90F1F4;
+    color: #293241;
+    text-align: left;
+    border-color: #98C1D9; }
+
+input[type='email']::placeholder {
+  text-align: left; }
+
+input[type='text']::placeholder {
+  text-align: left; }
+
+.messageType {
+  grid-area: mType h3;
+    grid-area-font-family: "Staatliches", cursive;
+    grid-area-color: #3D5A80; }
+
+select {
+  width: 350px;
+  height: 40px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-family: "Staatliches", cursive;
+  border-width: 3px;
+  padding: 5px;
+  border-color: #98C1D9;
+  background-color: #3D5A80;
+  color: #90F1F4;
+  font-size: 16px; }
+
+.comments {
+  grid-area: comments;
+  width: 98%;
+  margin-bottom: 20px; }
+  .comments textarea {
+    width: 100%;
+    font-family: "Staatliches", cursive;
+    border-width: 3px;
+    padding: 5px;
+    border-color: #98C1D9;
+    background-color: #90F1F4;
+    color: #293241;
+    font-size: 16px;
+    border-radius: 10px; }
+  .comments button {
+    float: right; }
+
+.afterForm {
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .afterForm p {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px; }
+  .afterForm img {
+    display: block;
+    margin-top: 20px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -100px; }
+
 @media (max-width: 480px) {
   /* ########## CONTACTO ########## */
   .mainContacto {
-    grid-area: mainForm;
-    display: grid;
-    grid-template-areas: "heroContacto" "fieldset" "afterForm";
     grid-template-columns: 100%;
     max-width: 100%; }
     .mainContacto fieldset {
       grid-area: fieldset; }
-  .heroContacto {
-    grid-area: heroContacto;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center; }
-    .heroContacto h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 42px;
-      text-transform: uppercase;
-      margin-top: 30px;
-      float: right; }
-    .heroContacto img {
-      display: inline-block;
-      max-height: 200px;
-      text-align: right; }
-  .afterForm {
-    grid-area: afterForm; }
   fieldset {
-    display: subgrid;
-    grid-template-areas: "lInput" "lInput" "mType" "comments";
-    grid-template-rows: 100px 100px 100px 100px;
-    grid-template-columns: 100%;
-    width: 95%;
-    grid-row-gap: 20px;
-    border-width: 0;
     margin-left: auto;
     margin-right: auto; }
-  label {
-    font-family: 'Staatliches', cursive;
-    color: #3D5A80; }
-  .shortInput {
-    display: inline-block;
-    grid-area: sInput;
-    width: 49%;
-    margin-bottom: 20px; }
-    .shortInput input {
-      width: 100%;
-      border-radius: 10px;
-      height: 40px;
-      background-color: #90F1F4;
-      color: #293241;
-      text-align: left;
-      border-color: #98C1D9; }
-  .longInput {
-    grid-area: lInput;
-    width: 98%;
-    margin-bottom: 50px; }
-    .longInput input {
-      width: 100%;
-      float: left;
-      border-radius: 10px;
-      height: 40px;
-      background-color: #90F1F4;
-      color: #293241;
-      text-align: left;
-      border-color: #98C1D9; }
-  input[type='email']::placeholder {
-    text-align: left; }
-  input[type='text']::placeholder {
-    text-align: left; }
-  .messageType {
-    grid-area: mType h3;
-      grid-area-font-family: 'Staatliches', cursive;
-      grid-area-color: #3D5A80; }
-  select {
-    width: 350px;
-    height: 40px;
-    -webkit-appearance: none;
-    -webkit-border-radius: 10px;
-    font-family: 'Staatliches', cursive;
-    border-width: 3px;
-    padding: 5px;
-    border-color: #98C1D9;
-    background-color: #3D5A80;
-    color: #90F1F4;
-    font-size: 16px;
-    border-radius: 10px; }
-  .comments {
-    grid-area: comments;
-    width: 98%;
-    margin-bottom: 20px; }
-    .comments textarea {
-      width: 100%;
-      font-family: 'Staatliches', cursive;
-      border-width: 3px;
-      padding: 5px;
-      border-color: #98C1D9;
-      background-color: #90F1F4;
-      color: #293241;
-      font-size: 16px;
-      border-radius: 10px; }
-    .comments button {
-      float: right; }
   /* ########### */
   .afterForm {
-    margin-top: 60px;
-    display: block;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 20px 0px 20px; }
-    .afterForm p {
-      text-align: center;
-      font-family: 'Oswald', sans-serif;
-      font-size: 24px; }
-    .afterForm img {
-      display: block;
-      margin-top: 20px;
-      height: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: -100px; } }
+    padding: 0px 20px 0px 20px; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   .mainContacto {
-    grid-area: mainForm;
-    display: grid;
-    grid-template-areas: "heroContacto" "fieldset" "afterForm";
     grid-template-columns: 100%;
     max-width: 100%; }
-  .heroContacto {
-    grid-area: heroContacto;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center; }
-    .heroContacto h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 42px;
-      text-transform: uppercase;
-      margin-top: 30px;
-      float: right; }
-    .heroContacto img {
-      display: inline-block;
-      max-height: 200px;
-      text-align: right; }
   .mainContacto fieldset {
     grid-area: fieldset; }
-  .afterForm {
-    grid-area: afterForm; }
   fieldset {
-    display: subgrid;
-    grid-template-areas: "lInput" "lInput" "mType" "comments";
-    grid-template-rows: 100px 100px 100px 100px;
-    grid-template-columns: 100%;
-    width: 95%;
-    grid-row-gap: 20px;
-    border-width: 0;
     margin-left: auto;
     margin-right: auto; }
-  label {
-    font-family: 'Staatliches', cursive;
-    color: #3D5A80; }
-  .shortInput {
-    display: inline-block;
-    grid-area: sInput;
-    width: 49%;
-    margin-bottom: 20px; }
-    .shortInput input {
-      width: 100%;
-      border-radius: 10px;
-      height: 40px;
-      background-color: #90F1F4;
-      color: #293241;
-      text-align: left;
-      border-color: #98C1D9; }
-  .longInput {
-    grid-area: lInput;
-    width: 98%;
-    margin-bottom: 50px; }
-    .longInput input {
-      width: 100%;
-      float: left;
-      border-radius: 10px;
-      height: 40px;
-      background-color: #90F1F4;
-      color: #293241;
-      text-align: left;
-      border-color: #98C1D9; }
-  input[type='email']::placeholder {
-    text-align: left; }
-  input[type='text']::placeholder {
-    text-align: left; }
-  .messageType {
-    grid-area: mType; }
-    .messageType h3 {
-      font-family: 'Staatliches', cursive;
-      color: #3D5A80; }
-  select {
-    width: 350px;
-    height: 40px;
-    -webkit-appearance: none;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    font-family: 'Staatliches', cursive;
-    border-width: 3px;
-    padding: 5px;
-    border-color: #98C1D9;
-    background-color: #3D5A80;
-    color: #90F1F4;
-    font-size: 16px; }
-  .comments {
-    grid-area: comments;
-    width: 98%;
-    margin-bottom: 20px; }
-    .comments textarea {
-      width: 100%;
-      font-family: 'Staatliches', cursive;
-      border-width: 3px;
-      padding: 5px;
-      border-color: #98C1D9;
-      background-color: #90F1F4;
-      color: #293241;
-      font-size: 16px;
-      border-radius: 10px; }
-    .comments button {
-      float: right; }
   /* ########### */
   .afterForm {
-    margin-top: 60px;
-    display: block;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 20px 0px 20px; }
-    .afterForm p {
-      text-align: center;
-      font-family: 'Oswald', sans-serif;
-      font-size: 24px; }
-    .afterForm img {
-      display: block;
-      margin-top: 20px;
-      height: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: -100px; } }
+    padding: 0px 20px 0px 20px; } }
 
 @media (min-width: 1024px) {
   .mainContacto {
-    grid-area: mainForm;
-    display: grid;
-    grid-template-areas: "heroContacto" "fieldset" "afterForm";
     justify-items: center; }
     .mainContacto fieldset {
       grid-area: fieldset; }
-  .heroContacto {
-    grid-area: heroContacto;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center; }
-    .heroContacto h1 {
-      font-family: 'Anton', sans-serif;
-      font-size: 42px;
-      text-transform: uppercase;
-      margin-top: 30px;
-      float: right; }
-    .heroContacto img {
-      display: inline-block;
-      max-height: 200px;
-      text-align: right; }
-  .afterForm {
-    grid-area: afterForm; }
   fieldset {
-    display: subgrid;
-    grid-template-areas: "lInput" "lInput" "mType" "comments";
-    grid-template-rows: 100px 100px 100px 100px;
-    grid-template-columns: 100%;
-    grid-row-gap: 20px;
-    border-width: 0; }
-  label {
-    font-family: 'Staatliches', cursive;
-    color: #3D5A80; }
-  .shortInput {
-    display: inline-block;
-    grid-area: sInput;
-    width: 49%;
-    margin-bottom: 20px; }
-    .shortInput input {
-      width: 100%;
-      border-radius: 10px;
-      height: 40px;
-      background-color: #90F1F4;
-      color: #293241;
-      text-align: left;
-      border-color: #98C1D9; }
-  .longInput {
-    grid-area: lInput;
-    width: 98%;
-    margin-bottom: 50px; }
-    .longInput input {
-      width: 100%;
-      float: left;
-      border-radius: 10px;
-      height: 40px;
-      background-color: #90F1F4;
-      color: #293241;
-      text-align: left;
-      border-color: #98C1D9; }
-  input[type='email']::placeholder {
-    text-align: left; }
-  input[type='text']::placeholder {
-    text-align: left; }
-  .messageType {
-    grid-area: mType; }
-    .messageType h3 {
-      font-family: 'Staatliches', cursive;
-      color: #3D5A80; }
-  select {
-    width: 350px;
-    height: 40px;
-    -webkit-appearance: none;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    font-family: 'Staatliches', cursive;
-    border-width: 3px;
-    padding: 5px;
-    border-color: #98C1D9;
-    background-color: #3D5A80;
-    color: #90F1F4;
-    font-size: 16px; }
-  .comments {
-    grid-area: comments;
-    width: 98%;
-    margin-bottom: 20px; }
-    .comments textarea {
-      width: 100%;
-      font-family: 'Staatliches', cursive;
-      border-width: 3px;
-      padding: 5px;
-      border-color: #98C1D9;
-      background-color: #90F1F4;
-      color: #293241;
-      font-size: 16px;
-      border-radius: 10px; }
-      .comments textarea button {
-        float: right; }
+    /*LEFT EMPTY SIMPLY FOR REFERENCE, REGARDING THE OTHER MEDIA QUERIES*/ }
   /* ########### */
   .afterForm {
-    margin-top: 60px;
-    display: block;
-    width: 800px;
     margin-left: auto;
-    margin-right: auto; }
-    .afterForm p {
-      text-align: center;
-      font-family: 'Oswald', sans-serif;
-      font-size: 24px; }
-    .afterForm img {
-      display: block;
-      margin-top: 20px;
-      height: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: -100px; } }
+    margin-right: auto;
+    width: 800px; } }

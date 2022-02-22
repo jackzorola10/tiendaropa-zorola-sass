@@ -22,8 +22,8 @@ HTML, CSS, SASS, SEO.
 #### CSS
 - Se usaron estructuras de grids en cada pagina, estas a su ves quedarón centralizadas en [_estructura.scss](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/scss/_estructura.scss).
 - Se utilizó flexbox para finalizar la estructura de multiples componentes. 
-- @keyframes fueron utilizados para crear una animación en el hero del homepage. De momento se dejo con una transición muy rapida solo para mostrar la funcionalidad. [_heroHomepage.scss](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/scss/_heroHomepage.scss)
-- @media queries estan aplicados a lo largo del proyecto para otorgar responsividad. 
+- **@keyframes** fueron utilizados para crear una animación en el hero del homepage. De momento se dejo con una transición muy rapida solo para mostrar la funcionalidad. [_heroHomepage.scss](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/scss/_heroHomepage.scss)
+- **@media** queries estan aplicados a lo largo del proyecto para otorgar responsividad. 
 
 
 #### SASS
@@ -31,6 +31,7 @@ HTML, CSS, SASS, SEO.
 - Se utilizaron operadores de lenguaje de Sass en los colores, para establecer la paleta de colores y variaciones. [_colores.scss](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/scss/_colores.scss)
 - Se usarón nestings para agrupar el codigo de manera mas legible a lo largo de todo el proyecto. 
 - Se puede encontrar ademas el [package.json](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/package.json) con la documentación necesaria.
+- Se uso **@mixin** en propiedades de los botones [componentes.scss](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/scss/_componentes.scss)
 
 
 #### SEO
