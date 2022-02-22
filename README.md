@@ -17,17 +17,17 @@ HTML, CSS, SASS, SEO.
 - Cada pagina tiene ligado sus estilos. 
 
 #### CSS
-- Se usaron estructuras de grids en cada pagina, estas a su ves quedarón centralizadas en [_estructura.scss](../scss/_estructura.scss).
+- Se usaron estructuras de grids en cada pagina, estas a su ves quedarón centralizadas en [_estructura.scss](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/scss/_estructura.scss).
 - Se utilizó flexbox para finalizar la estructura de multiples componentes. 
-- @keyframes fueron utilizados para crear una animación en el hero del homepage. De momento se dejo con una transición muy rapida solo para mostrar la funcionalidad. [_homepage.scss](../scss/_heroHomepage.scss)
+- @keyframes fueron utilizados para crear una animación en el hero del homepage. De momento se dejo con una transición muy rapida solo para mostrar la funcionalidad. [_heroHomepage.scss](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/scss/_heroHomepage.scss)
 - @media queries estan aplicados a lo largo del proyecto para otorgar responsividad. 
 
 
 #### SASS
 - Se utilizó Sass para estructurar el proyecto y aprovechar las ventajas de esta tecnología. 
-- Se utilizaron operadores de lenguaje de Sass en los colores, para establecer la paleta de colores y variaciones. [_colores.scss] (../scss/_colores.scss)
+- Se utilizaron operadores de lenguaje de Sass en los colores, para establecer la paleta de colores y variaciones. [_colores.scss] (https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/scss/_colores.scss)
 - Se usarón nestings para agrupar el codigo de manera mas legible a lo largo de todo el proyecto. 
-- Se puede encontrar ademas el [package.json](../package.json) con la documentación necesaria.
+- Se puede encontrar ademas el [package.json](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/package.json) con la documentación necesaria.
 
 
 #### SEO
@@ -38,7 +38,7 @@ HTML, CSS, SASS, SEO.
     - [TinyPng] (https://tinypng.com)
     - [Photopea] (https://www.photopea.com)
 - Se llevaron a cabo varios analisis en lighthouse donde se busco reparar los comentarios que hacia el reporte, esta es la calificación final que se logró obtener [Lighthouse] ().
-- Se extrajo ademas un sitemap añadido en la ruta del proyecto [sitemap.xml](../sitemap.xml).
+- Se extrajo ademas un sitemap añadido en la ruta del proyecto [sitemap.xml](https://github.com/jackzorola10/tiendaropa-zorola-sass/blob/main/sitemap.xml).
 
 
 ### Paginas del proyecto
