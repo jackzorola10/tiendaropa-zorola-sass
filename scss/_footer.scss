@@ -34,6 +34,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
+        color: $white;
     }
     .newsletter{
         text-align: center;
@@ -42,6 +43,9 @@
         margin-top: 20px;
         font-family: 'Oswald', sans-serif;
     }  
+    form label {
+        color: $white;
+    }
     form input{
         display: block;
         margin-left: auto;
@@ -97,6 +101,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
+        color: $white;
     }
     .newsletter{
         text-align: center;
@@ -105,6 +110,9 @@
         margin-top: 20px;
         font-family: 'Oswald', sans-serif;
     }  
+    form label {
+        color: $white;
+    }
     form input{
         display: block;
         margin-left: auto;
@@ -164,6 +172,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 10px;
+        color: $white;
     }
     .newsletter{
         text-align: center;
@@ -172,6 +181,10 @@
         margin-top: 20px;
         font-family: 'Oswald', sans-serif;
     }  
+    form label {
+        color: $white;
+    }
+
     form input{
         display: block;
         margin-left: auto;

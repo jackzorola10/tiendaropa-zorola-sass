@@ -9,7 +9,7 @@
 @media (max-width: 480px) {
   .homepage {
     /* BODY OF HOMEPAGE */
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -19,7 +19,7 @@
     grid-template-rows: auto auto auto; }
   .bodyCarrito {
     /* BODY OF CARRITO */
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -27,7 +27,7 @@
     grid-template-areas: "menu menu menu" "cHandler cHandler cHandler" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr; }
   .bodyCamisetas {
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -35,7 +35,7 @@
     grid-template-areas: "menu menu menu" "cShirts cShirts cShirts" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr; }
   .usPage {
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -43,7 +43,7 @@
     grid-template-areas: "menu menu menu" "usSection usSection usSection" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr; }
   .bodyContacto {
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -53,7 +53,7 @@
 @media (min-width: 481px) and (max-width: 1023px) {
   .homepage {
     /* BODY OF HOMEPAGE */
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -63,7 +63,7 @@
     grid-template-rows: auto auto auto; }
   .bodyCarrito {
     /* BODY OF CARRITO */
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -71,7 +71,7 @@
     grid-template-areas: "menu menu menu" "cHandler cHandler cHandler" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr; }
   .bodyCamisetas {
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -79,7 +79,7 @@
     grid-template-areas: "menu menu menu" "cShirts cShirts cShirts" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr; }
   .usPage {
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -87,7 +87,7 @@
     grid-template-areas: "menu menu menu" "usSection usSection usSection" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr; }
   .bodyContacto {
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -97,7 +97,7 @@
 @media (min-width: 1024px) {
   .homepage {
     /* BODY OF HOMEPAGE */
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -107,7 +107,7 @@
     grid-template-rows: auto auto auto; }
   .bodyCarrito {
     /* BODY OF CARRITO */
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -115,7 +115,7 @@
     grid-template-areas: "menu menu menu" "cHandler cHandler cHandler" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr; }
   .bodyCamisetas {
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -123,7 +123,7 @@
     grid-template-areas: "menu menu menu" "cShirts cShirts cShirts" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr; }
   .usPage {
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -131,7 +131,7 @@
     grid-template-areas: "menu menu menu" "usSection usSection usSection" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr; }
   .bodyContacto {
-    background-image: url(https://i.ibb.co/pRSWNtQ/back-image-edited.png);
+    background-image: url(../assets/background-100.jpg);
     background-repeat: repeat;
     background-position: left;
     background-attachment: fixed;
@@ -203,13 +203,16 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px; }
+    margin-top: 10px;
+    color: #E0FBFC; }
   .newsletter {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     font-family: 'Oswald', sans-serif; }
+  form label {
+    color: #E0FBFC; }
   form input {
     display: block;
     margin-left: auto;
@@ -257,13 +260,16 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px; }
+    margin-top: 10px;
+    color: #E0FBFC; }
   .newsletter {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     font-family: 'Oswald', sans-serif; }
+  form label {
+    color: #E0FBFC; }
   form input {
     display: block;
     margin-left: auto;
@@ -311,13 +317,16 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px; }
+    margin-top: 10px;
+    color: #E0FBFC; }
   .newsletter {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     font-family: 'Oswald', sans-serif; }
+  form label {
+    color: #E0FBFC; }
   form input {
     display: block;
     margin-left: auto;
@@ -489,7 +498,7 @@
   .titles h1 {
     font-family: 'Anton', sans-serif;
     font-size: 42px; }
-  .titles h3 {
+  .titles h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     margin: 20px 0px 20px 0px; }
