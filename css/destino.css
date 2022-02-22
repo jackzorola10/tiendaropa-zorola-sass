@@ -685,13 +685,60 @@
     margin-left: auto;
     margin-right: auto; } }
 
+.bodyCarrito main {
+  grid-area: cHandler; }
+
+.carritoTitle {
+  font-family: "Anton", sans-serif;
+  font-size: 72px;
+  margin: 30px 0 30px 30px; }
+
+.cart {
+  grid-area: cart;
+  /* GRID INDEX */
+  background-color: #E0FBFC;
+  box-shadow: 5px 5px 5px #293241;
+  border-radius: 10px; }
+
+.cartProduct {
+  padding: 10px 10px 10px 10px;
+  border-width: 0 0 3px 0;
+  border-color: #98C1D9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .cartProduct img {
+    /*This is the important block  1 of 2*/
+    width: 80px;
+    border-radius: 8px; }
+
+.cartProductInfo {
+  /*This is the important block  2 of 2*/
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 100%; }
+
+.cartProductName {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  color: #293241; }
+
+.cartProductMiniInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 40%;
+  font-family: "Oswald", sans-serif;
+  color: #293241; }
+  .cartProductMiniInfo i {
+    font-size: 20px; }
+    .cartProductMiniInfo i:hover {
+      color: #56698A; }
+
 @media (max-width: 480px) {
-  .bodyCarrito main {
-    grid-area: cHandler; }
-  .carritoTitle {
-    font-family: 'Anton', sans-serif;
-    font-size: 72px;
-    margin: 30px 0 30px 30px; }
   .carritoHandler {
     margin-left: auto;
     margin-right: auto;
@@ -702,55 +749,11 @@
     grid-row-gap: 40px;
     justify-items: stretch; }
   .cart {
-    grid-area: cart;
-    background-color: #E0FBFC;
-    box-shadow: 5px 5px 5px #293241;
-    border-radius: 10px;
-    width: 80%;
     margin-right: auto;
-    margin-left: auto; }
-  .cartProduct {
-    padding: 10px 10px 10px 10px;
-    border-width: 0 0 3px 0;
-    border-color: #98C1D9;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; }
-    .cartProduct img {
-      /*This is the important block  1 of 2*/
-      width: 80px;
-      border-radius: 8px; }
-  .cartProductInfo {
-    /*This is the important block  2 of 2*/
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    width: 100%; }
-  .cartProductName {
-    position: relative;
-    font-family: 'Oswald', sans-serif;
-    font-size: 28px;
-    color: #293241; }
-  .cartProductMiniInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 40%;
-    font-family: 'Oswald', sans-serif;
-    color: #293241; }
-    .cartProductMiniInfo i {
-      font-size: 20px; }
-      .cartProductMiniInfo i:hover {
-        color: #56698A; } }
+    margin-left: auto;
+    width: 80%; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
-  .bodyCarrito main {
-    grid-area: cHandler; }
-  .carritoTitle {
-    font-family: 'Anton', sans-serif;
-    font-size: 72px;
-    margin: 30px 0 30px 30px; }
   .carritoHandler {
     margin-left: auto;
     margin-right: auto;
@@ -761,55 +764,11 @@
     grid-row-gap: 40px;
     justify-items: stretch; }
   .cart {
-    grid-area: cart;
-    background-color: #E0FBFC;
-    box-shadow: 5px 5px 5px #293241;
-    border-radius: 10px;
-    width: 80%;
     margin-right: auto;
-    margin-left: auto; }
-  .cartProduct {
-    padding: 10px 10px 10px 10px;
-    border-width: 0 0 3px 0;
-    border-color: #98C1D9;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; }
-    .cartProduct img {
-      /*This is the important block  1 of 2*/
-      width: 80px;
-      border-radius: 8px; }
-  .cartProductInfo {
-    /*This is the important block  2 of 2*/
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    width: 100%; }
-  .cartProductName {
-    position: relative;
-    font-family: 'Oswald', sans-serif;
-    font-size: 28px;
-    color: #293241; }
-  .cartProductMiniInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 40%;
-    font-family: 'Oswald', sans-serif;
-    color: #293241; }
-    .cartProductMiniInfo i {
-      font-size: 20px; }
-      .cartProductMiniInfo i:hover {
-        color: #56698A; } }
+    margin-left: auto;
+    width: 80%; } }
 
 @media (min-width: 1024px) {
-  .bodyCarrito main {
-    grid-area: cHandler; }
-  .carritoTitle {
-    font-family: 'Anton', sans-serif;
-    font-size: 72px;
-    margin: 30px 0 30px 30px; }
   .carritoHandler {
     margin-left: auto;
     margin-right: auto;
@@ -821,47 +780,8 @@
     grid-column-gap: 40px;
     justify-items: stretch; }
   .cart {
-    grid-area: cart;
     max-width: 600px;
-    width: 100%;
-    background-color: #E0FBFC;
-    box-shadow: 5px 5px 5px #293241;
-    border-radius: 10px;
-    max-width: 600px; }
-  .cartProduct {
-    padding: 10px 10px 10px 10px;
-    border-width: 0 0 3px 0;
-    border-color: #98C1D9;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; }
-    .cartProduct img {
-      /*This is the important block  1 of 2*/
-      width: 80px;
-      border-radius: 8px; }
-  .cartProductInfo {
-    /*This is the important block  2 of 2*/
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    width: 100%; }
-  .cartProductName {
-    position: relative;
-    font-family: 'Oswald', sans-serif;
-    font-size: 28px;
-    color: #293241; }
-  .cartProductMiniInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 40%;
-    font-family: 'Oswald', sans-serif;
-    color: #293241; }
-    .cartProductMiniInfo i {
-      font-size: 20px; }
-      .cartProductMiniInfo i:hover {
-        color: #56698A; } }
+    width: 100%; } }
 
 @media (max-width: 480px) {
   .total {
